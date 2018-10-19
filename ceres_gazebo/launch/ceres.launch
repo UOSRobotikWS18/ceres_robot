@@ -5,7 +5,8 @@
   <arg name="paused" default="false"/>
   <arg name="debug" default="false"/>
   <arg name="verbose" default="false"/>
-  <arg name="world" value="$(find uos_gazebo_worlds)/worlds/avz_collada.world"/> 
+  <arg name="world" value="$(find uos_gazebo_worlds)/worlds/avz_collada.world"/>
+  
 
   <!-- Start Gazebo with the given parameters -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
