@@ -13,15 +13,7 @@
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
   <!-- Joint State Publisher -->
   <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher">
-    <param name="use_gui" value="$(arg jsp_gui)" />
-    <rosparam>
-      zeros:
-        pico_flex_angle : 0.0
-    </rosparam>
   </node>
-
-  ### Navigation 
-  <include file="$(find ceres_navigation)/launch/move_base_flex.launch"/>  
 
   ### Sensors
   <include if="$(arg use_volksbot_driver)" file="$(find ceres_bringup)/launch/volksbot.launch"/>
