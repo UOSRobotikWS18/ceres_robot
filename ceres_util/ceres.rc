@@ -38,6 +38,7 @@ ceres-client(){
 }
 
 ceres-client-ip(){
+  unset ROS_HOSTNAME
   export ROS_IP=$(dig +short myip.opendns.com @resolver1.opendns.com)
   if [ -n "$1" ]
   then
