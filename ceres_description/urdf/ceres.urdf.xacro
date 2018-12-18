@@ -28,14 +28,16 @@
   <xacro:property name="axis_right" value="${-body_width/2 - wheel_body_offset}"/>
   <xacro:property name="axis_left" value="${body_width/2 + wheel_body_offset}"/>
   <xacro:property name="axis_length" value="${body_width + 2 * wheel_body_offset}" />
-  <xacro:property name="turning_adaptation" value="0.95" />
+  
+  <xacro:property name="turning_adaptation" value="0.2" />
+  <xacro:property name="torque" value="40.0" />
 
   <xacro:property name="bearing_width" value="0.05"/>
   <xacro:property name="bearing_height" value="0.09"/>
   <xacro:property name="bearing_thickness" value="0.01"/>
 
   <xacro:property name="body_mass" value="40.0"/>
-  <xacro:property name="wheel_mass" value="3.0"/>
+  <xacro:property name="wheel_mass" value="30.0"/>
 
   <xacro:property name="imu_width" value="0.036"/>
   <xacro:property name="imu_length" value="0.038"/>
@@ -269,8 +271,8 @@
       <right_rear_wheel_joint>right_rear_wheel_joint</right_rear_wheel_joint>
       <wheel_separation>${axis_length}</wheel_separation>
       <wheel_diameter>${2*wheel_radius}</wheel_diameter>
-      <turning_adaptation>0.95</turning_adaptation>
-      <torque>4.0</torque>
+      <turning_adaptation>${turning_adaptation}</turning_adaptation>
+      <torque>${torque}</torque>
       <max_velocity>2</max_velocity>
       <updateRate>40.0</updateRate>
     </plugin>
