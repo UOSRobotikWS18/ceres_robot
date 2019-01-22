@@ -24,13 +24,10 @@
   <include file="$(find ceres_gazebo)/launch/spawn_ceres.launch" />
   
   <!-- EKF -->
-  <include file="$(find ceres_gazebo)/launch/ekf.launch"/> 
 
   <!-- Map Server -->
-  <include file="$(find ceres_gazebo)/launch/map_server.launch"/>
 
   <!-- AMCL -->
-  <include file="$(find ceres_gazebo)/launch/amcl.launch"/>
 
   <!-- Robot State Publisher -->
   <node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher">
