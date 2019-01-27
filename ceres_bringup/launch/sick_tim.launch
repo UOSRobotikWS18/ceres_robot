@@ -4,7 +4,7 @@
       <param name="frame_id" type="str" value="scanner" />
       <param name="device_number" type="int" value="0" />
       <param name="time_offset" type="double" value="-0.062" />
-      <!--<param name="time_increment" type="double" value="0.000185185" />-->
+      <param name="time_increment" type="double" value="0.000185185" />
       
       <!--<remap from="scan" to="front_scan"/>-->
     <!-- default values: -->

@@ -24,7 +24,7 @@
     <rosparam file="$(find ceres_navigation)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find ceres_navigation)/config/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find ceres_navigation)/config/local_costmap_params.yaml" command="load" />
-    <rosparam file="$(find ceres_navigation)/config/prohibition_areas.yaml" command="load" ns="global_costmap/costmap_prohibition_layer" />
+    <!-- <rosparam file="$(find ceres_navigation)/config/prohibition_areas.yaml" command="load" ns="global_costmap/costmap_prohibition_layer" /> -->
   </node>
   
   <!-- SMACH Navigation State Machine -->
