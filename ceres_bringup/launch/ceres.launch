@@ -5,7 +5,7 @@
   <arg name="use_volksbot_driver" default="true" />
   <arg name="use_imu" default="true" />
   <arg name="sensor" default="tim"/>
-  <arg name="use_ekf" default="false" />
+  <arg name="use_ekf" default="true" />
   <arg name="jsp_gui" default="false"/>
 
   ### Upload Pluto to parameter server
