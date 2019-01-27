@@ -28,7 +28,7 @@
   </node>
   
   <!-- SMACH Navigation State Machine -->
-  <!--<node pkg="ceres_navigation" type="mbf_state_machine.py" name="mbf_state_machine" output="screen"/>-->
+  <node pkg="ceres_navigation" type="mbf_state_machine.py" name="mbf_state_machine" output="screen"/>
 
   <!-- RViz with config -->
   <node if="$(arg rviz)" name="rviz" pkg="rviz" type="rviz" args="-d $(find ceres_navigation)/rviz/move_base_flex.rviz" />
